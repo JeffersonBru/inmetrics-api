@@ -1,6 +1,6 @@
 # Projeto Desafio Inmetrics - API
 
-### Execução dos testes api
+### Executar testes
 
 Na raiz do projeto execute no terminal o comando "mvn surefire-report:report & mvn site"
  
