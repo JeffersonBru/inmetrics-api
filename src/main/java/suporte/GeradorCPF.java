@@ -2,7 +2,7 @@ package suporte;
 import java.util.ArrayList;
 import javax.swing.text.MaskFormatter;
 /**
- * Classe para geração de CPF com ou sem máscara
+ * Classe para geracao de CPF com ou sem mascara
  *
  */
 public final class GeradorCPF {
@@ -12,7 +12,6 @@ public final class GeradorCPF {
 	//Metodo para geracao de um numero aleatorio entre 0 e 9
 	 * @param URL
 	 * @param arquivoJSON
-	 * @author Carlos Henrique
 	 */
 	private int geraNumAleatorio(){
 		//Note que foi preciso fazer um cast para int, ja que Math.random() retorna um double
@@ -102,9 +101,8 @@ public final class GeradorCPF {
 	}
 
 	/**
-	 * Gera CPF com máscara (14 dígitos com a máscara)
-	 * @return CPF válido com máscara
-	 * @author Carlos Henrique
+	 * Gera CPF com  mascara (14 digitos com a mï¿½scara)
+	 * @return CPF valido com  mascara
 	 */
 	public  String geraCPFComMask() {
 		//Primeiro executamos os metodos de geracao
@@ -131,9 +129,8 @@ public final class GeradorCPF {
 	}
 	
 	/**
-	 * Gera CPF sem mascara (11 dígitos)
-	 * @return CPF válido sem máscara
-	 * @author Carlos Henrique
+	 * Gera CPF sem mascara (11 digitos)
+	 * @return CPF valido sem mascara
 	 */
 	public String geraCPFSemMask() {
 		//Primeiro executamos os metodos de geracao
