@@ -16,7 +16,7 @@ import empregado.model._Empregado;
 import suporte.LeitorProperties;
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-public class Empregado extends BaseTest{
+public class EmpregadoTest extends BaseTest{
 
 	static HelperEmpregado hlpEmp;
 	static _Empregado empregado;
