@@ -101,7 +101,7 @@ public final class GeradorCPF {
 	}
 
 	/**
-	 * Gera CPF com  mascara (14 digitos com a m�scara)
+	 * Gera CPF com  mascara (14 digitos com a mascara)
 	 * @return CPF valido com  mascara
 	 */
 	public  String geraCPFComMask() {
