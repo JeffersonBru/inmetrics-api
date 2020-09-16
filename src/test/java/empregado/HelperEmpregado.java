@@ -3,6 +3,8 @@ package empregado;
 import java.text.NumberFormat;
 import java.util.Locale;
 
+import org.json.JSONObject;
+
 import empregado.model._Empregado;
 import empregado.type.Sexo;
 import empregado.type.TipoContratacao;
@@ -27,6 +29,20 @@ public class HelperEmpregado extends Suporte {
 				Sexo.getRandom(),
 				TipoContratacao.getRandom()
 				);
+	}
+	
+	public JSONObject gerarBody(_Empregado empregado) {
+		JSONObject empregadoJson = new JSONObject();
+		empregadoJson.put("nome", empregado.nome);
+		empregadoJson.put("cpf", empregado.cpf);
+		empregadoJson.put("admissao", empregado.admissao);
+		empregadoJson.put("cargo", empregado.cargo);
+		empregadoJson.put("comissao", empregado.comissao);
+		empregadoJson.put("salario", empregado.salario);
+		empregadoJson.put("departamentoId", empregado.departamento);
+		empregadoJson.put("sexo", empregado.sexo.getValue());
+		empregadoJson.put("tipoContratacao", empregado.contratacao.getValue());
+		return empregadoJson;
 	}
 
 }
